@@ -1,5 +1,7 @@
 package easy;
 
+import java.util.HashMap;
+
 class RomanToInteger {
     public int romanToInt(String s) {
         HashMap<Character, Integer> romanNumerals = new HashMap<>();
