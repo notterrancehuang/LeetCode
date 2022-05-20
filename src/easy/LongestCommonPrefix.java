@@ -1,7 +1,7 @@
 package easy;
 
 public class LongestCommonPrefix {
-    public String longestCommonPrefix(String[] strs) {
+    public static String longestCommonPrefix(String[] strs) {
         StringBuilder sb = new StringBuilder();
         // find the minimum length
         int minimumLength = strs[0].length();

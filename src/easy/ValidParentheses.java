@@ -3,7 +3,7 @@ package easy;
 import java.util.Stack;
 
 public class ValidParentheses {
-    public boolean isValid(String s) {
+    public static boolean isValid(String s) {
         Stack<Character> leftParen = new Stack<>();
         for (char c : s.toCharArray()) {
             // opening parentheses

@@ -3,7 +3,7 @@ package easy;
 import java.util.HashMap;
 
 class RomanToInteger {
-    public int romanToInt(String s) {
+    public static int romanToInt(String s) {
         HashMap<Character, Integer> romanNumerals = new HashMap<>();
         romanNumerals.put('I', 1);
         romanNumerals.put('V', 5);

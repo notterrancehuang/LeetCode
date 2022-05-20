@@ -9,7 +9,7 @@ class ListNode {
 }
 
 class MergeTwoSortedLists {
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode head = new ListNode();
         ListNode tail = head;
         
