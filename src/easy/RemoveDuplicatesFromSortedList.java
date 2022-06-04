@@ -23,8 +23,11 @@ public class RemoveDuplicatesFromSortedList {
 
         while (curr != null && curr.next != null) {
             if (curr.val == curr.next.val) {
+                // there is a duplicate
+                // increment next
                 curr.next = curr.next.next;
             } else {
+                // increment current node
                 curr = curr.next;
             }
         }
