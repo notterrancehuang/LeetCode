@@ -3,25 +3,7 @@ package easy;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Stack;
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {
-    }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
+import utils.TreeNode;
 
 public class BinaryTreeInorderTraversal {
     public static List<Integer> inorderTraversal(TreeNode root) {
