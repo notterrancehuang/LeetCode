@@ -10,14 +10,14 @@ public class BinaryTreePreorderTraversal {
         // preorder: root, left, right
         List<Integer> list = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
-        while (!stack.isEmpty() || root != null) {
-            while (root != null) {
-                list.add(root.val);
-                stack.push(root);
-                root = root.left;
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode curr = stack.pop();
+            if (curr != null) {
+                list.add(curr.val);
+                stack.push(curr.right);
+                stack.push(curr.left);
             }
-            root = stack.pop();
-            root = root.right;
         }
         return list;
     }
