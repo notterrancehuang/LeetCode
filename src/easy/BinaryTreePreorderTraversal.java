@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Stack;
 
-public class Solution {
+public class BinaryTreePreorderTraversal {
     public static List<Integer> preorderTraversal(TreeNode root) {
         // preorder: root, left, right
         List<Integer> list = new ArrayList<>();
