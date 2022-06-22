@@ -8,9 +8,10 @@ class PalindromeNumber {
         int num = x;
         int reverse = 0;
         while (num > 0) {
-            reverse = reverse * 10 + num % 10;
+            int remainder = num % 10;
+            reverse = reverse * 10 + remainder;
             num /= 10;
         }
-        return x == reverse;
+        return reverse == x;
     }
 }
