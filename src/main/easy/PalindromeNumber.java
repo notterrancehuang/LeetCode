@@ -14,10 +14,4 @@ public class PalindromeNumber {
         }
         return reverse == x;
     }
-
-    public static void main(String[] args) {
-        int x = 123;
-        boolean isPalindrome = isPalindrome(x);
-        System.out.println("Is palindrome number: " + isPalindrome);
-    }
 }
