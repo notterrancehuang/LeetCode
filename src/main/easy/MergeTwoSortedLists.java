@@ -2,7 +2,7 @@ package main.easy;
 
 import utils.ListNode;
 
-class MergeTwoSortedLists {
+public class MergeTwoSortedLists {
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode head = new ListNode();
         ListNode tail = head;
