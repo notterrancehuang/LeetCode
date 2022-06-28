@@ -1,20 +1,20 @@
 package main.easy;
 
 import java.util.List;
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public class PascalsTriangle {
     public static List<List<Integer>> generate(int numRows) {
-        int[][] pascal = new int[numRows][];
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> row = new ArrayList<>();
         for (int i = 0; i < numRows; i++) {
-            int[] row = new int[i + 1];
-            row[0] = 1;
-            row[i] = 1;
-            for (int j = 1; j < i; j++) {
-                row[j] = pascal[i - 1][j - 1] + pascal[i - 1][j];
+            for (int j = row.size() - 1; j >= 1; j--) {
+                row.set(j, row.get(j) + row.get(j - 1));
             }
-            pascal[i] = row;
+            row.add(1);
+            result.add(new ArrayList<>(row));
         }
-        return (List) Arrays.asList(pascal);
+
+        return result;
     }
 }
