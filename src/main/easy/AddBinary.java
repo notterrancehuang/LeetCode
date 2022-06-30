@@ -5,7 +5,9 @@ public class AddBinary {
         int carry = 0;
         int i = a.length() - 1;
         int j = b.length() - 1;
+
         StringBuilder result = new StringBuilder();
+
         while (i >= 0 || j >= 0) {
             int sum = carry;
             if (i >= 0) {
