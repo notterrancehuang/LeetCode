@@ -9,16 +9,18 @@ public class ClimbingStairs {
         return fibonacci(n);
     }
 
-    public static int fibonacci(int n) {
+    private static int fibonacci(int n) {
         int result = 0;
+        
         if (memo.containsKey(n)) {
             return memo.get(n);
         }
+
         if (n <= 2) {
             return n;
         }
 
-        result = fibonacci(n - 2) + fibonacci(n - 1);
+        result =  fibonacci(n - 1) + fibonacci(n - 2);
         memo.put(n, result);
         return result;
     }
