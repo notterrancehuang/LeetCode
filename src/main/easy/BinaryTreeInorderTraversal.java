@@ -7,9 +7,9 @@ import utils.TreeNode;
 
 public class BinaryTreeInorderTraversal {
     public static List<Integer> inorderTraversal(TreeNode root) {
-        // in order: left, root, right
         List<Integer> list = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
+
         while (!stack.isEmpty() || root != null) {
             while (root != null) {
                 stack.push(root);
