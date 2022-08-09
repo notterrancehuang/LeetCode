@@ -5,6 +5,7 @@ public class MergeSortedArray {
         int i = m - 1;
         int j = n - 1;
         int size = m + n - 1;
+
         while (i >= 0 && j >= 0) {
             if (nums1[i] >= nums2[j]) {
                 nums1[size] = nums1[i--];
@@ -13,6 +14,7 @@ public class MergeSortedArray {
             }
             size--;
         }
+
         while (i >= 0) {
             nums1[size--] = nums1[i--];
         }
